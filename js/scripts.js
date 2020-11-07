@@ -1,38 +1,39 @@
 $(window).on('load', function(){
 
-    $('#loader-overlay').addClass('done');
-    
+setTimeout(function(){ $('#loader-overlay').addClass('done'); }, 3000);
+
+
 // MENU
 //-----------------------------------------------------------------------------------------
 $('#menu-toggle').click(function(){
-    
+
     if ($(this).hasClass('active')) {
         $(this).removeClass('active');
     }  else {
         $(this).addClass('active');
-    }     
-    
+    }
+
     if ($('ul.primary-menu').hasClass('show')) {
         $('ul.primary-menu').removeClass('show');
     } else {
         $('ul.primary-menu').addClass('show');
     }
-    
+
 });
 $('#menu-toggle-2').click(function(){
-    
+
     if ($(this).hasClass('active')) {
         $(this).removeClass('active');
     }  else {
         $(this).addClass('active');
-    }     
-    
+    }
+
     if ($('ul.primary-menu').hasClass('show')) {
         $('ul.primary-menu').removeClass('show');
     } else {
         $('ul.primary-menu').addClass('show');
     }
-    
+
 });
 //-----------------------------------------------------------------------------------------
 // MENU
@@ -145,7 +146,7 @@ $('.owl-dots > button').click(function(){
         $('#banner .banner-bg.kvl-websites').removeClass('active');
     }
 });
-    
+
 //-----------------------------------------------------------------------------------------
 // BANNER SCRIPTS
 
